@@ -13,7 +13,7 @@ log = logging.getLogger(__name__)
 app = Flask(__name__)
 
 API_KEY = os.environ.get("API_KEY", "")
-RENDER_URL = os.environ.get("RENDER_URL", "")
+RENDER_URL = os.environ.get("RENDER_URL", "https://captcha-solver-b78w.onrender.com").strip().lstrip("@").strip()
 
 _last_ping = {"time": time.time()}
 
